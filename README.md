@@ -1,71 +1,76 @@
 # dami-mini-project
 
 # Project Background Overview
-My client has launched a pop-up café in a busy business district. They are offering home-made lunches and refreshments to the surrounding offices. As such, they require a software application which helps them to log and track orders. The program provides options for managing products, viewing orders, creating new orders, and handling courier services. This project is built as a simple, menu-driven program where users can interact with different features such as adding products, updating orders, and managing couriers.
+This project is a command-line software application designed for a pop-up café in a busy business district. The application helps manage and track orders, products, and couriers. It provides users with a menu-driven interface to manage product catalogs, view and create orders, and manage courier services efficiently.
 
 # Client Requirements
-The client would like the following:
-  To maintain a collection of `products` and `couriers`. 
-  When a customer makes a new `order`, I need to create this on the system. 
-  I need to be able to update the status of an `order` i.e: `preparing`, `out-for-delivery`, `delivered`. 
-  When I exit my app, I need all data to be persisted and not lost. 
-  When I start my app, I need to load all persisted data. 
-  I need to be sure my app has been tested and proven to work well. 
-  I need to receive regular software updates. 
+The client requested a software solution that:
+
+Maintains a collection of products and couriers.
+
+Allows the creation and updating of orders, including order status (e.g., preparing, out-for-delivery, delivered).
+
+Ensures data persistence so that data is saved and loaded upon each program start.
+
+Supports a simple and clear user interface, with options to return to the main menu or exit.
+
+Handles invalid input gracefully and is robust enough to avoid errors during operation.
 
   # Technical specificiations
-  The client also has the below specs that needs to be adhered to:
-  I will be building a program that runs on the command line (CLI). 
+The application runs via the command-line interface (CLI).
 
-- UI should be logical, clear, and simple to navigate. 
-- It should display a menu of options; some may be nested. 
-- There should be the option to exit / return to main menu. 
-- It should handle invalid input.
+The UI is simple and intuitive, offering a menu system with options to manage products, orders, and couriers.
 
-  # Data Persistence
-  Initially the data will be stored in plain text files but overtime, the data will need to be switched to csv and then finally SQL
+Initially, data is stored in plain text files, with plans to migrate to CSV and eventually SQL for better scalability.
 
-  # Testing
-  The code wll need to be robust to prevent it from breaking
-  
- # How to run the app 
- To run my app, you will need to open the file onto VS code or obtain it from Git. You will then need to open a terminal and press the execute (play) button and let the magic happen.
+The system is built to handle invalid input and provide a smooth user experience.
+
+  # Core Features
+ Main Menu: A central hub for navigating to the products, orders, and couriers menus.
+
+Product Management: Options to view, add, update, and delete products.
+
+Order Management: Create new orders, update order status, and delete orders.
+
+Courier Management: Add, update, and remove couriers.
+
+Data Persistence: Ensures all data is saved and loaded on app startup and exit.
+
+Error Handling: Graceful handling of invalid user inputs.
+
+# How to run the application
+Open the project in a code editor like Visual Studio Code.
+
+Open the terminal and run the script.
 
 The program will present a main menu with the following options:
-Products Menu: Manage products (view, add, update, delete).
-Orders Menu: Manage orders (view, create, update status, delete).
-Courier Menu: Manage couriers (view, add, update, delete).
-Exit: Exit the program.
-Using the numbers 0,1,2,3 will help navigate you to where you need to go 
 
-# Core Functions
-- main_menu(): Displays the main menu and navigates to other sections.
-- products_menu(): Displays options related to products.
-- orders_menu(): Displays options related to orders.
-- courier_menu(): Displays options related to couriers.
-- view_courier_list(): Displays the list of couriers.
-- print_products(): Displays the list of products.
-- create_order(): Creates a new order and adds it to the order list.
-- update_product(): Updates product details (name, price).
-- update_order(): Updates order details (product ID, quantity, status).
-- delete_product(): Deletes a product from the list.
-- delete_order(): Deletes an order from the list.
-- add_courier(): Adds a new courier to the list.
-- update_courier(): Updates the details of a courier.
-- delete_courier(): Deletes a courier from the list.
+1: Products Menu (Manage products)
 
-# How did your design go about meeting the project's requirements? 
-To the best of my ability, i followed the weekly project requirements set out by Brian/Jess/Jas leaning on the powerpoints provided and on my cohort during the breakout rooms.
+2: Orders Menu (Manage orders)
 
-# How did you guarantee the project's requirements? 
-I highlighted in green every part of the project requirement i had implemented in red. Once i ran my code and executed the code successfully, i then highlighted the project requirement in green to indicate to me that i could move onto the next task.
+3: Couriers Menu (Manage couriers)
 
-# If you had more time, what is one thing you would improve upon? 
-I would try to stay up to date with the weeks so that i could have got further with the mini project. There was some topics being taught that i did not understand straight away so i had to use the project time to go over the notes and do my own independent research. This helped me understand the concepts being taught but inadvertently made me fall behind on my mini task. 
+0: Exit the program
 
-# What did you most enjoy implementing? 
-Honestly, i would say everything because i am new to coding to everything i found interesting. If i had to pick one i would say it was implementing functions because functions took me such a long time to wrap my head around.
+# Testing 
+I conducted thorough testing to ensure the robustness of the application. This included testing:
 
+Handling invalid input
+
+Proper functionality of each menu and option
+
+# Improvements for the Future
+If I had more time, I would focus on:
+
+Migrating data storage to CSV files and eventually SQL for better scalability.
+
+Enhancing the testing coverage to include edge cases and performance tests.
+
+Streamlining the user interface and making the menus more user-friendly.
+
+# Reflection
+I enjoyed implementing the core features of the application, especially the functions that handle order creation, status updates, and managing product inventories. Functions were initially challenging, but as I gained a deeper understanding, they became one of the most rewarding aspects of the project. In the future, I’d aim to implement unit tests and data persistence to ensure my code is more efficient and robust for use.
 
 
 
